@@ -1,0 +1,71 @@
+// Card Component
+
+.card{
+    @include box;
+    border: 0;
+    position: relative;
+}
+
+.card-border-yellow{
+    border-left: 3px solid $yellow;
+    color: $yellow;
+}
+
+.card-border-red{
+    border-left: 3px solid $red;
+    color: $red;
+}
+
+.card-border-green{
+    border-left: 3px solid $green;
+    color: $green;
+}
+
+.card-success{
+    margin: .7em;
+    background-color: $green;
+    border-radius: 4px;
+    padding: .85em;
+    width: 100%;
+    box-shadow: 0 3px 10px rgba(10,210,10,.15);
+}
+
+.card__image{
+    height: 220px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: var(--radius);
+    border-top-left-radius: var(--radius);
+}
+
+.card__body{
+    padding: 1.2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__icon{
+    color: rgb(150,150,150);
+    margin-right: 11px;
+    font-size: 16px;
+}
+
+.card__campaign{
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background-color: var(--white);
+    border-radius: 25px;
+    box-shadow: 0 3px 10px rgba(10,210,10,.15);
+    padding: .45em .85em;
+}
+
+.card__pdv{
+    font-size: 12px;
+}
+
+.card__datetime{
+    font-size: 12px;
+    color: gray;
+}

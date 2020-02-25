@@ -1,0 +1,200 @@
+/* 
+Theme Name: Bootstrap 4 Sass
+Description: Bootstrap 4 with Sass
+*/
+
+// import files
+@import "import";
+
+/* COLORS 
+--------------------------------------------------*/
+body {
+    background: var(--gray);
+}
+
+a {
+    color: rgb(0,0,255);
+}
+.field__label{
+    font-size: 12px;
+    font-variant: all-small-caps;
+    color: var(--dark-gray);
+}
+.bg-inverse {
+    background: $primary-shade !important;
+}
+
+.site-footer {
+    background: var(--dark-gray);
+}
+
+.menu--main li a {
+    color: black;
+}
+
+.menu--account li a {
+    color: $primary-shade;
+}
+
+.site-name-slogan a {
+    text-decoration: none;
+}
+
+.card-group img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.card-group .field--type-image {
+    margin: 0
+}
+
+.slick {
+    width: 100%;
+}
+
+.slick>div {
+    margin: 0 15px;
+}
+
+
+
+// MI STYLE
+
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link .nav-link:hover{
+    color: black;
+}
+
+
+.navbar-nav .dropdown-menu{
+    background-color: rgb(250,250,250);
+    border: none;
+    padding: 1.5em;
+    color: black;
+    &:hover{
+        color: red;
+    }
+    box-shadow: 0 4px 8px rgba(200,200,200,.3);
+}
+
+#navbar-top.navbar-light .nav-link {
+    color: white;
+    &:hover{
+        color: red;
+    }
+}
+
+.breadcrumb{
+    background-color: white;
+    color: rgb(160,160,160);
+}
+
+
+.content-center .view-content-row .row{
+    margin: 0 auto;
+}
+
+
+.col-auto{
+    padding: .6em 0em;
+}
+.row{
+    justify-content: center;
+}
+
+.grid{
+    display: grid;
+    width: 100%;
+}
+
+.grid-1-col{
+    display: grid;
+    justify-items: stretch;
+    gap: 24px;
+}
+.grid-3-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+        @media only screen and (max-width: $small){
+            grid-template-columns: 1fr;
+        }
+    }
+
+.grid-4-col{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: auto;
+gap: 16px;
+    @media only screen and (max-width: $small){
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.grid-6-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+        @media only screen and (max-width: $small){
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+
+
+.text__state{
+    display: block;
+    &::before{
+        content: '';
+        display: inline-block;
+        margin-right: .5em;
+        width: 14px;
+        height: 15px;
+        border-radius: 26px;
+        background-color: grey;
+    }
+} 
+
+.text__state--green{
+    &::before{
+        background-color: $green;
+    }
+}
+.text__state--red{
+    &::before{
+        background-color: $red;
+    }
+}
+.text__state--yellow{
+    &::before{
+        background-color: $yellow;
+    }
+}
+
+.box__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+    @media only screen and (max-width: $small){
+        grid-template-columns: 1fr;
+    }
+}
+
+.box{
+    @include box;
+    padding: 2em 1.75em;
+}
+
+.user-login-form{
+    max-width: 480px;
+    margin: 0 auto;
+    @include box;
+}
