@@ -25,7 +25,7 @@ a {
 }
 
 .site-footer {
-    background: var(--dark-gray);
+    background: var(--gray);
 }
 
 .menu--main li a {
@@ -196,5 +196,14 @@ gap: 16px;
 .user-login-form{
     max-width: 480px;
     margin: 0 auto;
+    padding: 2em;
     @include box;
+}
+
+.layout--onecol{
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: var(--radius);
+    padding: 2em;
 }
