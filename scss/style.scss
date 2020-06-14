@@ -8,9 +8,6 @@ Description: Bootstrap 4 with Sass
 
 /* COLORS 
 --------------------------------------------------*/
-body {
-    background: var(--gray);
-}
 
 a {
     color: rgb(0,0,255);
@@ -206,4 +203,15 @@ gap: 16px;
     background-color: var(--white);
     border-radius: var(--radius);
     padding: 2em;
+}
+
+.sidebar_first{
+    max-width: 280px;
+    background-color: rgb(230,230,230);
+    padding-top: 1em;
+}
+
+.sidebar__link__title{
+    font-size: 12px;
+    text-transform: uppercase;
 }

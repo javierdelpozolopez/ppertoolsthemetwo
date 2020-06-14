@@ -2,9 +2,6 @@
 
 .sidebar {
     .block {
-        border-style: solid;
-        padding: $spacer $spacer;
-        margin: 0 0 $spacer;
         .content {
             font-size: $font-size-base;
             line-height: $line-height-sm;
@@ -25,8 +22,5 @@
     tr.odd {
         background: none;
         border-bottom: $border-width solid $border-color;
-    }
-    nav ul.nav {
-        margin: 0 -($spacer);
     }
 }

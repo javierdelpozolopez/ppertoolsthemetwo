@@ -18,6 +18,7 @@ const paths = {
     bootstrap: './node_modules/bootstrap/dist/js/bootstrap.min.js',
     jquery: './node_modules/jquery/dist/jquery.min.js',
     popper: 'node_modules/popper.js/dist/umd/popper.min.js',
+    popper: 'node_modules/popper.js/dist/umd/popper.min.js.map',
     dest: './js'
   }
 }
@@ -55,18 +56,18 @@ function js () {
 }
 
 // Static Server + watching scss/html files
-function serve () {
-  browserSync.init({
-    proxy: 'http://127.0.0.1:8088/',
-  })
+// function serve () {
+//   browserSync.init({
+//     proxy: 'http://localppertools.com',
+//   })
 
-  gulp.watch([paths.scss.watch, paths.scss.bootstrap], styles).on('change', browserSync.reload)
-}
+//   gulp.watch([paths.scss.watch, paths.scss.bootstrap], styles).on('change', browserSync.reload)
+// }
 
-const build = gulp.series(styles, gulp.parallel(js, serve))
+const build = gulp.series(styles, gulp.parallel(js))
 
 exports.styles = styles
 exports.js = js
-exports.serve = serve
+// exports.serve = serve
 
 exports.default = build
